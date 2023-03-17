@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style>
+        :root {
+    --cor-primaria-success: rgb(0, 255, 128);
+    --cor-hover: rgb(3, 68, 8);
+    --cor-secundaria-success: rgb(0, 0, 0);
+
+}
+
+    body {
+        text-align: center;
+    }
+        p {
+            text-align: center;
+        }
+
+        .btn {
+        border: none;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background .3s;
+        border-radius: 3px;
+        margin-top: 10px;
+        }
+
+
+        .btn {
+        background-color: var(--cor-primaria-success);
+        outline: none;
+        color: var(--cor-secundaria-success)
+        }
+
+        .btn:hover {
+        background-color: var(--cor-hover);
+        }
+
+        .btn:active {
+        color:var(--cor-primaria-success);
+        background-color: var(--cor-secundaria-success);
+        }
+
+    
+
+        .containerA {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 720px;
+        }
+
+        #item01 {
+        background-color: whitesmoke ;
+        color: black;
+        padding: 5px;
+        margin: 5px;   
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        height: 800px;
+        }
+        
+        .containerB {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        }
+
+        #item02 {
+        background-color: whitesmoke;
+        color: black;
+        padding: 5px;
+        margin: 5px;   
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        } 
+
+        
+        .corpo {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    
+
+</head>
+<body>
+
+
+    <div class="containerA">
+        <div id="item01">
+            <p id="text">Selecione a Função.</p>
+            
+            <button class="btn" onclick="conteudo1()">Hidrocarboneto</button>
+            <button class="btn" onclick="conteudo2()">Alcool</button>
+            <button class="btn" onclick="conteudo3()">Enol</button>
+            <button class="btn" onclick="conteudo4()">Fenol</button>
+            <button class="btn" onclick="conteudo5()">Aldeido</button>
+            <button class="btn" onclick="conteudo6()">Cetona</button>
+            <button class="btn" onclick="conteudo7()">Ácido carboxílico</button>
+            <button class="btn" onclick="conteudo8()">Éster</button>
+            <button class="btn" onclick="conteudo9()">Éter</button>
+            <button class="btn" onclick="conteudo10()">Haleto orgânico</button>
+            <button class="btn" onclick="conteudo11()">Haleto ácido</button>        
+            <button class="btn" onclick="conteudo12()">Amina</button>
+            <button class="btn" onclick="conteudo13()">Amido</button>
+            <button class="btn" onclick="conteudo14()">Nitrila</button>
+            <button class="btn" onclick="conteudo15()">Nitrocomposto</button>
+            <button class="btn" onclick="conteudo16()">Ácido sulfônico</button>
+            </div>
+    </div>
+    </div>
+    </main>
+
+    <script>
+        function conteudo1() {
+        document.getElementById("text").innerHTML = "Hidrocarbonetos são moléculas apolares, homogêneas e formadas por átomos de carbono e hidrogênio. Podem ser saturados, como no caso dos alcanos e cicloalcanos, nos quais não se tem a presença de duplas ou triplas ligações, ou podem ser insaturados, como alcenos, alcinos, ciclenos, entre outros.";
+        }
+
+        function conteudo2() {
+            document.getElementById("text").innerHTML = "Álcool, na química, é uma molécula orgânica formada por átomos de carbono, hidrogênio e oxigênio. A principal característica do composto é a presença de um, dois ou mais hidroxilas (grupos de oxigênio com hidrogênio). Existem três tipos de álcool: isopropílico, metílico e etílico."
+        }
+
+
+        function conteudo3() {
+            document.getElementById("text").innerHTML = "Os enóis são compostos orgânicos caracterizados pela ligação de uma hidroxila a um carbono insaturado. No entanto, alguns compostos possuem a hidroxila ligada diretamente a um carbono com dupla ligação. Esse tipo de composto não é um álcool, ele pertence à função orgânica denominada: enol."
+        }
+        
+        
+        function conteudo4() {
+            document.getElementById("text").innerHTML = "Os fenóis são compostos orgânicos que possuem o grupo hidroxila (OH) ligado diretamente a um carbono do anel aromático. O seu grupo funcional é também o seu composto mais simples, isto é, o hidroxibenzeno, também chamado de benzenol e de fenol comum."
+        }
+
+        
+        function conteudo5() {
+            document.getElementById("text").innerHTML = "Aldeído é uma função orgânica caracterizada pela presença de um grupo carbonila (C=O) cujo carbono também está ligado a um átomo de hidrogênio, formando o grupamento -CHO, denominado aldoxila ou formila. O grupo funcional aldeído (-CHO) sempre está localizado na extremidade da cadeia carbônica."
+        }
+
+        
+        function conteudo6() {
+            document.getElementById("text").innerHTML = "Cetonas são compostos dentro da química orgânica onde a carbolina faz ligação simples com dois átomos de carbono."
+        }
+
+        function conteudo7() {
+            document.getElementById("text").innerHTML = "Ácidos carboxílicos designam uma função orgânica oxigenada, ou seja, que possui pelo menos um átomo de oxigênio em sua estrutura. Esses ácidos são indicados pela fórmula geral COOH e caracterizam-se, essencialmente, pela presença do grupo carboxila em sua estrutura."
+        }
+
+        function conteudo8() {
+            document.getElementById("text").innerHTML = "Os ésteres são compostos formados pela troca do hidrogênio presente na carboxila dos ácidos carboxílicos por um grupo orgânico. As balas de gomas e outros doces possuem o cheiro e o gosto que nos atraem, graças aos flavorizantes, que em grande parte são ésteres."
+        }
+
+        function conteudo9() {
+            document.getElementById("text").innerHTML = "Éter é um tipo de função orgânica oxigenada, pois apresenta um átomo de oxigênio entre duas cadeias carbônicas, que são formadas por átomos de carbono e hidrogênio. Os éteres são classificados como simétricos quando o oxigênio está ligado a dois radicais idênticos e os assimétricos possuem dois radicais diferentes."
+        }
+
+        function conteudo10() {
+            document.getElementById("text").innerHTML = "Os haletos orgânicos são substâncias derivadas dos hidrocarbonetos – compostos que possuem somente átomos de carbono e hidrogênio em suas estruturas. Nesse caso, ocorre a substituição de pelo menos um átomo de hidrogênio por halogênios, que podem ser o flúor (F), o cloro (Cl), o bromo (Br) ou o iodo (I)."
+        }
+
+        function conteudo11() {
+            document.getElementById("text").innerHTML = "Em química orgânica haletos de ácidos são compostos orgânicos que derivam dos ácidos carboxílicos pela substituição do oxigênio ligado por uma ligaçãosimples ao grupo hidroxila por um halogênio. O composto contém um grupo funcional -COX, a qual consiste de um grupo carbonilo ligado ao átomo de halogênio. "
+        }
+
+        function conteudo12() {
+            document.getElementById("text").innerHTML = "Aminas são substâncias orgânicas que apresentam um ou mais radicais ligados ao Nitrogênio e são muito utilizadas na produção de outros compostos orgânicos. Aminas são compostos orgânicos nitrogenados que derivam da substância amônia (NH3) pela substituição de um ou mais hidrogênios por radicais orgânicos."
+        }
+
+        function conteudo13() {
+            document.getElementById("text").innerHTML = "O amido é um polissacarídeo importante para os vegetais, pois é a sua principal fonte de energia. Como fontes conhecidas de amido, podemos citar a batata e o arroz. O amido é um polissacarídeo encontrado em grande quantidade na natureza e é formado por cadeias de amilose e/ou amilopectina."
+        }
+
+        function conteudo14() {
+            document.getElementById("text").innerHTML = "As nitrilas são compostos orgânicos que possuem o grupo — C N ligado à cadeia carbônica e são provenientes do gás cianídrico (HCN), pois o hidrogênio desse gás é substituído por um radical orgânico. É por essa razão que esses compostos passaram a ser chamados também de cianetos."
+        }
+
+        function conteudo15() {
+            document.getElementById("text").innerHTML = "Os nitrocompostos são compostos orgânicos que apresentam o grupo nitro (NO2) ligado a uma estrutura aberta saturada ou a um aromático. São originados por reações de substituição."
+        }
+
+        function conteudo16() {
+            document.getElementById("text").innerHTML = "Em química inorgânica, ácido sulfônico é um ácido hipotético com fórmula H-S(=O)₂-OH. Esta composição é uma menos estável tautômero do ácido sulfuroso HO-S-OH, por isso o ácido sulfônico se converte rapidamente neste quando é formado."
+        }
+    </script>
+</body>
+</html>
